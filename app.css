@@ -14,9 +14,9 @@ body {
     font-weight: 400;
     line-height: 1.5;
     background-color: rgb(41, 48, 52);
-    max-width: 100%;
-    max-height: 100%;
+
 }
+
 ul {
     list-style-type: none;
 }
@@ -26,17 +26,14 @@ a {
     color: #4facd4;
 }
 
-h2 , p {
+h2,
+p {
     color: white;
 }
 
 main {
     display: flex;
     flex-wrap: nowrap;
-}
-
-.container-fluid {
-    padding: 0 !important;
 }
 
 /* sidebar */
@@ -53,7 +50,7 @@ nav {
 }
 
 .nav-item i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #cfcdcd;
     margin: .5rem;
 }
@@ -70,18 +67,27 @@ i.active {
 
 .nav-header i {
     margin: 1rem 0;
-    font-size: 1.8rem;
+    font-size: 3rem;
 }
 
-@media screen and (min-width: 768px){
-    .sidebar{
+.nav a {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .sidebar {
         display: none;
     }
 }
 
-/* ---------------------------------------------sidebar END-------------------------------------------------------- */
+/* sidebar END */
 
 /* NAVBAR */
+
+.navbar{
+    margin-top: .5rem;
+    margin-bottom: .8rem;
+}
 
 .form-inline {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
@@ -112,6 +118,10 @@ i.active {
     outline: none;
     border: none;
 
+}
+
+.navbar .container-fluid {
+    padding: 0 !important;
 }
 
 .navbar-toggler {
@@ -149,53 +159,75 @@ i.active {
     display: block;
 }
 
-/* --------------------- navbar End ----------------------- */
+/* navbar End  */
+
+
+/* AFFECTED AREA */
 
 .affected {
     margin-top: 1rem;
-    margin-bottom: .5rem;
 }
 
 .dropdown button {
     border: none;
     font-size: 10px;
-    align-self: flex-end;
 }
 
 .dropdown-toggle::after {
     color: #f6405d;
 }
 
-.drop .btn{
-    align-self: flex-end;
+.drop {
+    align-items: flex-end;
 }
 
-.card {
-    background-color: #2e3539 !important;
-    border: none !important;
-    outline: none !important;
-    color: white !important;
+/* AFFECTED AREA ENDS */
+
+
+/* MAP */
+
+
+
+/* MAP ENDS */
+
+
+/* news */
+
+.news i {
+    margin-left: 1rem;
+}
+
+.news .card-item:hover {
+
+    background-color: #f6405d;
+
+}
+
+.news .card-body {
     padding: 0 !important;
-    margin-right: 1rem;
 }
 
-.row {
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-
+.news .card-item {
+    padding-left: .8rem;
+    padding-right: .8rem;
+    padding-top: .5rem;
 }
 
-.col-lg-7 {
-    padding-right: 0 !important;
-    margin-bottom: 1rem;
+.news a{
+    font-size: 1.3rem;
+    padding-left: .8rem;
+   
+    padding-top: .5rem;
 }
 
-.col-lg-5 {
-    padding-left: 0 !important;
-    margin-bottom: 1rem;
+/* mews ends */
+
+/* progressBar  */
+
+progress {
+    border: none;
+    width: 100%;
 }
-
-
 
 .progressbar progress::-webkit-progress-value {
     background-color: #fe3e5d;
@@ -220,27 +252,9 @@ i.active {
 
 }
 
-progress {
-    border: none;
-    /* height: 8px; */
-    width: 100%;
-}
+/* PROGRESSBAR ENDS */
 
-.service .btn {
-    background: #f6405d;
-    border-radius: 30px;
-    border: none;
-    padding: .5rem 3rem;
-}
-
-.service .col-md-6 {
-    padding: 0 !important;
-}
-
-.service img {
-    height: 100%;
-    width: 100%;
-}
+/* info */
 
 .info i {
     font-size: 1.5rem;
@@ -249,9 +263,35 @@ progress {
     background-color: #4facd45e;
 }
 
+/* info Ends */
 
-.news i {
-    margin-left: 1rem;
+
+/* service */
+
+.service .btn {
+    background: #f6405d;
+    border-radius: 30px;
+    border: none;
+    padding: .5rem 3rem;
+}
+
+.service img {
+    height: 100%;
+    width: 100%;
+}
+
+/* service ends */
+
+
+.card {
+    background-color: #2e3539 !important;
+    border: none !important;
+    outline: none !important;
+    color: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 20px;
+
 }
 
 
@@ -265,12 +305,10 @@ progress {
 
 
 
-.col-lg-6 {
-    padding-left: 0 !important;
+div {
+    border-radius: 20px;
 }
 
-
-
-.map .card-body {
-    padding: 0 !important;
+.container-fluid{
+    margin-bottom: .4rem;
 }

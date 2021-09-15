@@ -51,7 +51,7 @@
 
         <!-- ------------------------------------- SIDEBAR ------------------------------------------------------------- -->
 
-        <div class="sidebar d-flex flex-column flex-shrink-0 " style="width: 4.5rem;">
+        <aside class="sidebar  d-flex flex-column flex-shrink-0 " style="width: 4.5rem;">
             <div class="nav-header">
                 <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
                     <a href="#">
@@ -107,7 +107,7 @@
                     </a>
                 </ul>
             </div>
-        </div>
+        </aside>
 
         <!------------------------------------------------ sidebar End -------------------------------------------------- -->
 
@@ -184,7 +184,7 @@
 
                 
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="row gx-2 gy-2">
 
     <!-- -------------------------------AFFECTED AREA----------------------------------------------------------- -->
 
@@ -220,13 +220,10 @@
 
                         <!-- -----------------------------------------------------------------------  M A P --------------------------------------------- -->
 
-                        <div class="map col-lg-7 col-sm-6">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <div class="map w-100 h-100" id='map'>
-
-                                    </div>
-                                </div>
+                        <div class="map col-lg-7">
+                            <div class="card">
+                                
+                                <div id='map' style=' height: 540px;'></div>
                               </div>
                         </div>
 
@@ -235,12 +232,12 @@
                         <!-- MAP END------------------------------------------------- -->
 
                         <div class="d-flex col-lg-5">
-                            <div class="row">
+                            <div class="row flex-grow-1 gx-2">
 
                                 <!-- --------------------------------------------------CHART CARD------------------------------------------------- -->
 
-                                <div class="Cartdiv col-sm-6 col-lg-6 ">
-                                    <div class="card w-100 h-100">
+                                <div class="chartDiv col-sm-6 col-lg-6 ">
+                                    <div class="card h-100">
                                         <div class="card-body">
                                             <div class="dropdown">
                                                 <button class="btn btn-secondary text-muted small dropdown-toggle "
@@ -255,9 +252,9 @@
                                                 </ul>
                                             </div>
                                             <p class="card-text">9,634464</p>
-                                            <div style="width:100px; height:100px;">
+                                            <!-- <div style="width:100px; height:100px;">
                                                 <canvas id="line_chart"></canvas>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <div class="card-body">
                                             <div class="dropdown">
@@ -273,9 +270,9 @@
                                                 </ul>
                                             </div>
                                             <p class="card-text">9,634464</p>
-                                            <div style="width:100px; height:100px;">
+                                            <!-- <div style="width:100px; height:100px;">
                                                 <canvas id="line_chart"></canvas>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <div class="card-body">
                                             <div class="dropdown">
@@ -291,37 +288,46 @@
                                                 </ul>
                                             </div>
                                             <p class="card-text">9,634464</p>
-                                            <div style="width:100px; height:100px;">
+                                            <!-- <div style="width:100px; height:100px;">
                                                 <canvas id="line_chart"></canvas>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
                                 <!-- --------------------------------------------NEWS CARD--------------------------------------------------------------- -->
 
-                                <div class="news col-sm-6 col-lg-6 mx-auto">
-                                    <div class="card w-100 h-100">
+                                <div class="news col-sm-6 col-lg-6">
+                                    <div class="card h-100">
                                         <div class="card-body ">
+                                           <div  class="card-item">
                                             <span class="text-muted text-uppercase small">June 10</span>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
                                                 pariatur!
                                                 <i class="fas fa-arrow-right" style="color: #01a4f3;"></i>
                                             </p>
+                                           </div>
+                                           <div class="card-item">
                                             <span class="text-muted text-uppercase small">June 10</span>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
                                                 pariatur!
                                                 <i class="fas fa-arrow-right" style="color: #01a4f3;"></i>
                                             </p>
+                                           </div>
+                                           <div class="card-item">
                                             <span class="text-muted text-uppercase small">June 10</span>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
                                                 pariatur!
                                                 <i class="fas fa-arrow-right" style="color: #01a4f3;"></i>
                                             </p>
+                                           </div>
+                                           <div class="card-item">
                                             <span class="text-muted text-uppercase small">June 10</span>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
                                                 pariatur!
                                                 <i class="fas fa-arrow-right" style="color: #01a4f3;"></i>
                                             </p>
+                                           </div>
+                                            
                                             <a href="#">All news</a>
                                         </div>
                                     </div>
@@ -332,12 +338,12 @@
 
                         <!-- 2nd row -->
                        
-                        <div class=" d-flex col-lg-7">
-
+                        <div class=" d-flex col-lg-7 ">
+                            <div class="row flex-grow-1 gx-2">
         <!-- ----------------------------------------------PROGRESSBAR CARD----------------------------------------------------------------- -->
 
-                            <div class=" progressBar  col-lg-6 col-sm-6">
-                                <div class="card h-100">
+                            <div class=" progressBar  col-lg-6 col-sm-6" >
+                                <div class="card h-100" >
                                     <div class="card-body">
                                         <h5 class="card-title">West New Brighton</h5>
                                         <h6 class="card-subtitle mb-2 text-muted">New York, USA</h6>
@@ -362,7 +368,7 @@
         <!-- --------------------------------------------------INFO CARD-------------------------------------------------- -->
 
                             <div class="info col-lg-6 col-sm-6">
-                                <div class="card h-100">
+                                <div class="card w-100 h-100">
                                     <div class="card-body">
                                         <div class=" d-flex justify-content-around align-items-center">
                                             <i class="fas fa-home"></i>
@@ -381,13 +387,13 @@
                             </div>  
 
                             <!-- info card end  -->
-
+                        </div>
                         </div>
 
                         <!-- --------------------------------------------SERVICE CARD---------------------------------------------- -->
                         <div class="service col-lg-5">
                             <div class="card h-100" >
-                                <div class="row " style="height: 100%;">
+                                <div class="row h-100" >
                                     <div class="col-md-6">
                                         <div class="card-body">
                                             <h5 class="card-title">Special title treatment</h5>
@@ -398,7 +404,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <img src="./n.jpeg" class="img-fluid rounded-start" alt="...">
+                                        <img src="./n.jpeg" class="img-fluid" alt="image">
                                     </div>
                                 </div>
                             </div>
@@ -411,7 +417,7 @@
     </main>
 
 <!-- mapbox -->
-
+<script src="./data.js"></script>
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
 
     <script>
@@ -425,9 +431,6 @@
 
         const createMarkers = (data) => {
             const el = document.createElement('div');
-
-           
-            
             el.className = 'country-marker';
             return el;
         }
@@ -519,7 +522,7 @@ backdropColor:'transparent'
 
         
         <!-- coustom js -->
-        <script src="./data.js"></script>
+       
         <script src="./app.js"></script>
 
 </body>
